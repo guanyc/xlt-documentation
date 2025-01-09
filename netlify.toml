@@ -7,11 +7,3 @@ command = "hugo --gc --minify"
 
 [build.environment]
 GO_VERSION = "1.22.2"
-
-[context.production]
-command = "npm run build:production"
-
-[context.production.environment]
-HUGO_VERSION = "0.140.2"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "false"
