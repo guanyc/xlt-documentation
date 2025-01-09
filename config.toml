@@ -82,9 +82,9 @@ weight = 1
 
 [params]
 copyright = "https://xceptance.com"
-privacy_policy = "https://www.xceptance.com/en/privacy/"
+privacy_policy = "https://www.xceptance.com/en/contact/privacy.html"
 doc_license = "https://www.apache.org/licenses/LICENSE-2.0"
-host = "docs.xceptance.com"
+host = "xltdoc.xceptance.com"
 
 rss_sections = ["docs"]
 
@@ -171,82 +171,43 @@ enable = false
         desc = "The Xceptance Blog"
 
 # Main menu configuration
-[[menu.main]]
-    identifier = "xlt"
-    name = "XLT"
-    weight = 5
-    url = "/xlt"
-[[menu.main]]
-    name = "About XLT"
-    weight = 1
-    url = "/xlt/about-xlt"
-    parent = "xlt"
-[[menu.main]]
-    name = "Quick Start"
-    weight = 2
-    url = "/xlt/load-testing/quick-start"
-    parent = "xlt"
-[[menu.main]]
-    name = "Base Manual"
-    weight = 3
-    url = "/xlt/load-testing/manual"
-    parent = "xlt"
-[[menu.main]]
-    name = "Advanced Load Testing"
-    weight = 4
-    url = "/xlt/load-testing/advanced"
-    parent = "xlt"
-[[menu.main]]
-    name = "Test Suites"
-    weight = 5
-    url = "/xlt/load-testing/test-suites"
-    parent = "xlt"
-[[menu.main]]
-    name = "How-Tos"
-    weight = 6
-    url = "/xlt/load-testing/how-tos"
-    parent = "xlt"
-[[menu.main]]
-    name = "Glossary"
-    weight = 7
-    url = "/xlt/load-testing/glossary"
-    parent = "xlt"
-[[menu.main]]
-    identifier = "xlt-RN"
-    name = "Release Notes"
-    weight = 8
-    url = "/xlt/release-notes"
-    parent = "xlt"
 
-    
+
+
+
+
 [[menu.main]]
-    identifier = "xtc"
-    name = "XTC"
-    weight = 10
-    url = "/xtc"
+    identifier = "sqlite"
+    name = "SQLite"
+    weight = 15
+    url = "/sqlite"
 [[menu.main]]
-    name = "Basics"
+    name = "Getting Started"
     weight = 1
-    url = "/xtc/basics"
-    parent = "xtc"
+    url = "/sqlite/getting-started"
+    parent = "sqlite"
 [[menu.main]]
-    name = "Load Testing"
+    name = "Fundamentals"
     weight = 2
-    url = "/xtc/loadtesting"
-    parent = "xtc"
+    url = "/sqlite/fundamentals"
+    parent = "sqlite"
 [[menu.main]]
-    name = "Monitoring"
+    name = "Creating and managing databases"
     weight = 3
-    url = "/xtc/monitoring"
-    parent = "xtc"
+    url = "/sqlite/creating-and-managing-databases"
+    parent = "sqlite"
 [[menu.main]]
-    name = "Integrations"
+    name = "Working with data"
     weight = 4
-    url = "/xtc/integrations"
-    parent = "xtc"
+    url = "/sqlite/working-with-data"
+    parent = "sqlite"
 [[menu.main]]
-    identifier = "xtc-RN"
-    name = "Release Notes"
+    name = "Advanced Querying"
     weight = 5
-    url = "/xtc/xtc-release-notes"
-    parent = "xtc"
+    url = "/sqlite/advanced-querying"
+    parent = "sqlite"   
+[[menu.main]]
+    name = "Data modification"
+    weight = 6
+    url = "/sqlite/data-modification"
+    parent = "sqlite"   
