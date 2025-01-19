@@ -33,11 +33,7 @@ date: "2025-01-09 11:04:54+08:00"
 lastmod: "2025-01-09 11:04:54+08:00"
 draft: false
 
-keywords: [SQLite Data Types,
-Storing Numbers in SQLite,  
-SQLite TEXT vs. BLOB , 
-Dynamic Typing in SQLite,
-How SQLite Handles Binary Data]
+keywords: [SQLite Data Types,Storing Numbers in SQLite,  SQLite TEXT vs. BLOB , Dynamic Typing in SQLite, How SQLite Handles Binary Data]
 tags: [sqlite3]
 categories: [tech]
 author: "guanyc"
@@ -46,7 +42,7 @@ aliases: []
 description: ""
 summary:
 
-weight: 350
+weight: 349
 type: docs
 
 weight:

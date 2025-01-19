@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Xceptance Documentation Hub"
+title = "Andbible Tutorial Hub"
 
 enableRobotsTXT = true
 
@@ -7,7 +7,7 @@ enableRobotsTXT = true
 theme = ["xltdoc", "docsy"]
 
 # Will give values to .Lastmod etc.
-enableGitInfo = true
+enableGitInfo = false
 
 # Language settings
 contentDir = "content/en"
@@ -72,8 +72,8 @@ anchor = "smart"
 
 [languages]
 [languages.en.params]
-# title = "Xceptance Documentation Hub"
-description = "Documentation for XLT and XTC including Manuals and How-Tos"
+# title = "SQLite Tutorial, David and James's adventure with SQLite"
+description = ""
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -81,12 +81,12 @@ weight = 1
 # Everything below this are Site Params
 
 [params]
-copyright = "https://xceptance.com"
-privacy_policy = "https://www.xceptance.com/en/contact/privacy.html"
-doc_license = "https://www.apache.org/licenses/LICENSE-2.0"
+copyright = "https://sqlite-tutorial.netlify.app/"
+privacy_policy = "https://sqlite-tutorial.netlify.app/en/contact/privacy.html"
+doc_license = "'https://www.example.org/licenses/LICENSE-2.0'"
 host = "xltdoc.xceptance.com"
 
-rss_sections = ["docs"]
+rss_sections = ["sqlite"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
@@ -205,9 +205,9 @@ enable = false
     name = "Advanced Querying"
     weight = 5
     url = "/sqlite/advanced-querying"
-    parent = "sqlite"   
+    parent = "sqlite"
 [[menu.main]]
     name = "Data modification"
     weight = 6
     url = "/sqlite/data-modification"
-    parent = "sqlite"   
+    parent = "sqlite"

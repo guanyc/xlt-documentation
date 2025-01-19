@@ -33,17 +33,7 @@ date: "2025-01-09 11:17:59+08:00"
 lastmod: "2025-01-09 11:17:59+08:00"
 draft: false
 
-keywords: 
-- SQLite date and time functions  
-- SQLite datetime() example  
-- Handling timezones in SQLite  
-- SQLite strftime() tutorial  
-- SQLite date calculations  
-- Format modifiers in SQLite  
-- SQLite STRFTIME examples  
-- SQLite DATE vs DATETIME  
-- SQLite Julian Day calculations
-
+keywords: [SQLite date and time functions,  SQLite datetime() example  ,Handling timezones in SQLite,  SQLite strftime() tutorial  ,SQLite date calculations  ,Format modifiers in SQLite , SQLite STRFTIME examples  ,SQLite DATE vs DATETIME  ,SQLite Julian Day calculations]
 
 tags: [sqlite3]
 categories: [tech]
