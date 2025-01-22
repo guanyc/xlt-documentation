@@ -1,4 +1,4 @@
-baseURL = "andbible-tutorial.netlify.app"
+baseURL = "/"
 title = "Andbible AIGC Tutorial Hub"
 
 enableRobotsTXT = true
