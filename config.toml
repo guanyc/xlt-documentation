@@ -93,10 +93,10 @@ anchor = "smart"
 # Everything below this are Site Params
 
 [params]
-copyright = "https://sqlite-tutorial.netlify.app/"
-privacy_policy = "https://sqlite-tutorial.netlify.app/en/contact/privacy.html"
+copyright = "https://andbible-tutorial.netlify.app/"
+privacy_policy = "https://amdbible-tutorial.netlify.app/en/privacy.html"
 doc_license = "'https://www.example.org/licenses/LICENSE-2.0'"
-host = "xltdoc.xceptance.com"
+host = "andbible-tutorial.netlify.app"
 
 rss_sections = ["sqlite"]
 
@@ -166,21 +166,26 @@ enable = false
 #	icon = "fab fa-stack-overflow"
 #        desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-[[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/Xceptance/xlt-documentation"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
-[[params.links.developer]]
-	name = "Twitter"
-	url = "https://twitter.com/Xceptance"
-	icon = "fab fa-twitter"
-        desc = "Follow Xceptance on Twitter for more updates"
-[[params.links.developer]]
-	name = "Blog"
-	url = "https://blog.xceptance.com/"
-	icon = "fa fa-newspaper"
-        desc = "The Xceptance Blog"
+
+#[[params.links.developer]]
+#	name = "GitHub"
+#	url = "https://github.com/Xceptance/xlt-documentation"
+#	icon = "fab fa-github"
+ #       desc = "Development takes place here!"
+#[[params.links.developer]]
+#	name = "Twitter"
+#	url = "https://twitter.com/Xceptance"
+#	icon = "fab fa-twitter"
+#       desc = "Follow Xceptance on Twitter for more updates"
+#[[params.links.developer]]
+#	name = "Blog"
+#	url = "https://blog.xceptance.com/"
+#	icon = "fa fa-newspaper"
+#        desc = "The Xceptance Blog"
+
+
+
+
 
 # Main menu configuration
 
