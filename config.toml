@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "andbible-tutorial.netlify.app"
 title = "Andbible AIGC Tutorial Hub"
 
 enableRobotsTXT = true
@@ -24,15 +24,15 @@ weight = 1
 title = "Andbible AIGC Tutorial Hub"
 description = "Andbible AIGC Tutorial Hub"
 
-[languages.zh]
-languageName ="中文"
-weight = 2
-contentDir = "content/zh"
-[languages.zh.params]
-title = "Andbible 知识中心"
-description = "Andbible 知识中心"
-time_format_default = "2006-12-26"
-time_format_blog = "2006-12-26"
+#[languages.zh]
+#languageName ="中文"
+#weight = 2
+#contentDir = "content/zh"
+#[languages.zh.params]
+#title = "Andbible 知识中心"
+#description = "Andbible 知识中心"
+#time_format_default = "2006-12-26"
+#time_format_blog = "2006-12-26"
 
 # Language configuration
 
@@ -197,48 +197,48 @@ enable = false
     identifier = "sqlite"
     name = "SQLite"
     weight = 5
-    url = "/sqlite"
+    url = "/sqlite/"
 [[menu.main]]
     name = "Getting Started"
     weight = 100
-    url = "/sqlite/getting-started"
+    url = "/sqlite/getting-started/"
     parent = "sqlite"
 [[menu.main]]
     name = "Fundamentals"
     weight = 200
-    url = "/sqlite/fundamentals"
+    url = "/sqlite/fundamentals/"
     parent = "sqlite"
 [[menu.main]]
     name = "Creating and Managing databases"
     weight = 300
-    url = "/sqlite/creating-and-managing-databases"
+    url = "/sqlite/creating-and-managing-databases/"
     parent = "sqlite"
 [[menu.main]]
     name = "Working with data"
     weight = 400
-    url = "/sqlite/working-with-data"
+    url = "/sqlite/working-with-data/"
     parent = "sqlite"
 [[menu.main]]
     name = "Advanced Querying"
     weight = 500
-    url = "/sqlite/advanced-querying"
+    url = "/sqlite/advanced-querying/"
     parent = "sqlite"
 [[menu.main]]
     name = "Data Modification"
     weight = 600
-    url = "/sqlite/data-modification"
+    url = "/sqlite/data-modification/"
     parent = "sqlite"
 
 [[menu.main]]
     name = "SQLite Functions"
     weight = 700
-    url = "/sqlite/sqlite-functions"
+    url = "/sqlite/sqlite-functions/"
     parent = "sqlite"
 
 [[menu.main]]
     name = "Data Types"
     weight = 800
-    url = "/sqlite/data-types"
+    url = "/sqlite/data-types/"
     parent = "sqlite"
 
 [[menu.main]]
@@ -250,13 +250,13 @@ enable = false
 [[menu.main]]
     name = "Transaction"
     weight = 1000
-    url = "/sqlite/transaction"
+    url = "/sqlite/transaction-and-integrity/"
     parent = "sqlite"
 
 [[menu.main]]
     name = "Performace Optimization"
     weight = 1100
-    url = "/sqlite/performace-optimization"
+    url = "/sqlite/performace-optimization/"
     parent = "sqlite"
 
 [[menu.main]]
@@ -268,7 +268,7 @@ enable = false
 [[menu.main]]
     name = "Best Practices"
     weight = 1200
-    url = "/sqlite/best-practices/"
+    url = "/sqlite/sqlite-best-pratices/"
     parent = "sqlite"
 
 [[menu.main]]
