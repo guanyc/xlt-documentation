@@ -94,7 +94,7 @@ anchor = "smart"
 
 [params]
 copyright = "https://andbible-tutorial.netlify.app/"
-privacy_policy = "https://amdbible-tutorial.netlify.app/en/privacy.html"
+privacy_policy = "https://andbible-tutorial.netlify.app/privacy.html"
 doc_license = "'https://www.example.org/licenses/LICENSE-2.0'"
 host = "andbible-tutorial.netlify.app"
 
