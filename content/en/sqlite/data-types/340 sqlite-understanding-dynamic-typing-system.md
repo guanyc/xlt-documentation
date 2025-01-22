@@ -51,22 +51,22 @@ featured_image:
 ---
 
 ### SQLite’s Dynamic Typing System Explained  
-*A Casual Chat Between Xiaoming and James*  
+*A Casual Chat Between James and David*  
 
 ---
 
-**Xiaoming:** James, I was working with SQLite, and I noticed I could insert a string into a column I thought was supposed to store numbers. Isn’t that a bug?  
+**James:** David, I was working with SQLite, and I noticed I could insert a string into a column I thought was supposed to store numbers. Isn’t that a bug?  
 
-**James:** Haha, nope! That’s just SQLite’s dynamic typing at work. It’s flexible like that, but you have to be careful. Let me explain.  
+**David:** Haha, nope! That’s just SQLite’s dynamic typing at work. It’s flexible like that, but you have to be careful. Let me explain.  
 
 ---
 
 ### **Highlight 1: SQLite’s Dynamic Typing**  
-**James:** Unlike other databases, SQLite doesn’t enforce strict data types for columns. Instead, it uses something called *storage classes*.  
+**David:** Unlike other databases, SQLite doesn’t enforce strict data types for columns. Instead, it uses something called *storage classes*.  
 
-**Xiaoming:** Storage classes? What are those?  
+**James:** Storage classes? What are those?  
 
-**James:** Think of them as categories like `INTEGER`, `REAL`, `TEXT`, `BLOB`, and `NULL`. A column might suggest a type, but SQLite doesn’t insist on it.  
+**David:** Think of them as categories like `INTEGER`, `REAL`, `TEXT`, `BLOB`, and `NULL`. A column might suggest a type, but SQLite doesn’t insist on it.  
 
 **Example:**  
 
@@ -79,17 +79,17 @@ INSERT INTO demo (id, data) VALUES ('ABC', 123); -- Still works!
 ---
 
 ### **Pitfall 1: Data Integrity Risks**  
-**Xiaoming:** Wait a second. Doesn’t this make it easy to mess up data?  
+**James:** Wait a second. Doesn’t this make it easy to mess up data?  
 
-**James:** Absolutely! For example:  
+**David:** Absolutely! For example:  
 
 ```sql
 INSERT INTO demo (id) VALUES ('Hello');
 ```
 
-**Xiaoming:** But that should’ve been a number!  
+**James:** But that should’ve been a number!  
 
-**James:** That’s why you need to validate data at the application level or use `CHECK` constraints:  
+**David:** That’s why you need to validate data at the application level or use `CHECK` constraints:  
 
 ```sql
 CREATE TABLE demo (
@@ -100,11 +100,11 @@ CREATE TABLE demo (
 ---
 
 ### **Highlight 2: Type Affinity**  
-**James:** SQLite does try to behave predictably with something called *type affinity*.  
+**David:** SQLite does try to behave predictably with something called *type affinity*.  
 
-**Xiaoming:** What’s that?  
+**James:** What’s that?  
 
-**James:** When you declare a column type, SQLite interprets it loosely. For example:  
+**David:** When you declare a column type, SQLite interprets it loosely. For example:  
 
 ```sql
 CREATE TABLE demo (price NUMERIC);
@@ -116,16 +116,16 @@ CREATE TABLE demo (price NUMERIC);
 ---
 
 ### **Pitfall 2: Implicit Type Conversion**  
-**James:** Watch out for unexpected conversions!  
+**David:** Watch out for unexpected conversions!  
 
 ```sql
 INSERT INTO demo (price) VALUES ('100abc');
 SELECT price + 1 FROM demo;
 ```
 
-**Xiaoming:** Oh no! Instead of failing, it treats `'100abc'` as `0`.  
+**James:** Oh no! Instead of failing, it treats `'100abc'` as `0`.  
 
-**James:** Exactly. Always sanitize input and validate data.  
+**David:** Exactly. Always sanitize input and validate data.  
 
 ---
 
@@ -138,7 +138,7 @@ SELECT price + 1 FROM demo;
    - Modify a table to enforce that a column only accepts integers using a `CHECK` constraint.  
 
 3. **Debug Query:**  
-   - James ran this query:  
+   - David ran this query:  
      ```sql
      INSERT INTO demo (price) VALUES ('abc123');
      ```

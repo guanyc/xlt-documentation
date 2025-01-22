@@ -13,13 +13,14 @@
         }
     }
 
-
     @include media-breakpoint-up(md) {
         display: block !important;
     }
 
-
     &__section {
+        background-color: darkgray;
+
+        /* 添加背景颜色 */
         li {
             list-style: none;
         }
@@ -30,11 +31,10 @@
         }
 
         @include media-breakpoint-up(md) {
-            & > ul {
+            &>ul {
                 padding-left: .5rem;
             }
         }
-
 
         padding-left: 0;
     }
@@ -42,48 +42,65 @@
     &__section-title {
         display: block;
         font-weight: $font-weight-medium;
+        color: $white;
+        /* 设置标题颜色为白色 */
 
         .active {
             font-weight: $font-weight-bold;
+            font-size: 1.2em;
+            /* 增加字体大小 */
         }
 
         a {
-            color: $gray-900;
+            color: $white;
+            /* 设置链接颜色为白色 */
         }
     }
 
     .td-sidebar-link {
         display: block;
         padding-bottom: 0.375rem;
+        color: $white;
+        /* 设置链接颜色为白色 */
 
         &__page {
-            color: $gray-700;
+            color: $gray-300;
+            /* 设置页面链接颜色为浅灰色 */
             font-weight: $font-weight-light;
+        }
+
+        &.active {
+            font-size: 1.3em;
+            /* 增加字体大小 */
         }
     }
 
     a {
         &:hover {
             color: $blue;
+            /* 设置悬停颜色 */
             text-decoration: none;
         }
 
         &.active {
             font-weight: $font-weight-bold;
+            font-size: 1.3em;
+            /* 增加字体大小 */
         }
     }
 
     .dropdown {
         a {
-            color: $gray-700;
+            color: $white;
+            /* 设置下拉链接颜色为白色 */
         }
 
         .nav-link {
-             padding: 0 0 1rem;
+            padding: 0 0 1rem;
         }
     }
 
-    & > .td-sidebar-nav__section {
+    &>.td-sidebar-nav__section {
         padding-top: .5rem;
         padding-left: 1.5rem;
     }
@@ -92,17 +109,19 @@
 .td-sidebar {
     @include media-breakpoint-up(md) {
         padding-top: 4rem;
-        background-color: $td-sidebar-bg-color;
+        background-color: #333;
+        /* 设置背景颜色为深灰色 */
         padding-right: 1rem;
-        border-right: 1px solid $td-sidebar-border-color;
+        border-right: 1px solid $blue;
+        /* 设置边框颜色为蓝色 */
     }
-
 
     padding-bottom: 1rem;
 
     &__toggle {
         line-height: 1;
-        color: $gray-900;
+        color: $white;
+        /* 设置切换按钮颜色为白色 */
         margin: 1rem;
     }
 
@@ -110,6 +129,8 @@
         padding: 1rem 15px;
         margin-right: -15px;
         margin-left: -15px;
+        background-color: #444;
+        /* 设置搜索框背景颜色为更深的灰色 */
     }
 
     &__inner {
@@ -124,23 +145,30 @@
             }
         }
 
-
         @include media-breakpoint-up(xl) {
             flex: 0 1 320px;
         }
-
 
         .td-search-box {
             width: 100%;
         }
     }
 
-    #content-desktop {display: block;}
-    #content-mobile {display: none;}
+    #content-desktop {
+        display: block;
+    }
+
+    #content-mobile {
+        display: none;
+    }
 
     @include media-breakpoint-down(md) {
+        #content-desktop {
+            display: none;
+        }
 
-    #content-desktop {display: none;}
-    #content-mobile {display: block;}
+        #content-mobile {
+            display: block;
+        }
     }
 }

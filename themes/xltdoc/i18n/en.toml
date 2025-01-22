@@ -20,13 +20,13 @@ other = "in"
 
 # Footer text
 [footer_all_rights_reserved]
-other = "All Rights Reserved"
+other = "All Rights Reserved by andbible.com"
 
 [footer_copyright]
 other = "Xceptance GmbH"
 
 [footer_license]
-other = "Apache License 2.0"
+other = "Powered by Hugo, Docsy and XLT"
 
 [footer_privacy_policy]
 other = "Privacy Policy"
